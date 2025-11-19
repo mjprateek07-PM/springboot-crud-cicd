@@ -87,8 +87,8 @@ pipeline {
                         if (isUnix()) {
                             sh """
                                 export KUBECONFIG=\${KUBECONFIG}
-                                kubectl set image deployment/crud-app-deployment \
-                                crud-app=${DOCKER_IMAGE}:${DOCKER_TAG}
+                                kubectl set image deployment/crud-app-deployment
+                                crud-app-deployment=${DOCKER_IMAGE}:${DOCKER_TAG}
                                 kubectl rollout status deployment/crud-app-deployment
                             """
                         } else {
