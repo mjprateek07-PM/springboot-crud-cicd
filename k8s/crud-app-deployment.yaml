@@ -15,7 +15,7 @@
       spec:
         containers:
           - name: crud-app
-            image: your-dockerhub-username/crud-app:latest
+            image: Mjprateek07-PM/crud-app:latest
             ports:
               - containerPort: 8080
             env:
