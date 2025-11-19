@@ -6,7 +6,7 @@ pipeline {
     }
 
     environment {
-        DOCKER_IMAGE = 'mjprateek07-PM/crud-app'
+        DOCKER_IMAGE = 'mjprateek07/crud-app'
         DOCKER_TAG = "${BUILD_NUMBER}"
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-credentials')
         KUBECONFIG_CREDENTIAL = 'kubeconfig'
