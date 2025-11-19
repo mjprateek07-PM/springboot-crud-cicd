@@ -6,7 +6,7 @@ pipeline {
     }
 
     environment {
-        DOCKER_IMAGE = 'your-dockerhub-username/crud-app'
+        DOCKER_IMAGE = 'Mjprateek07-PM/crud-app'
         DOCKER_TAG = "${BUILD_NUMBER}"
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-credentials')
         KUBECONFIG_CREDENTIAL = 'kubeconfig'
@@ -17,8 +17,7 @@ pipeline {
             steps {
                 echo 'Checking out code from GitHub...'
                 git branch: 'main',
-                    url: 'https://github.com/your-username/your-repo.git',
-                    credentialsId: 'github-credentials'  // Remove this line if using public repo
+                    url: 'https://github.com/mjprateek07-PM/springboot-crud-cicd.git'
             }
         }
 
