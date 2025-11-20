@@ -17,7 +17,7 @@
           - name: crud-app
             image: mjprateek07/crud-app:latest
             ports:
-              - containerPort: 8080
+              - containerPort: 9090
             env:
               - name: DB_HOST
                 valueFrom:
@@ -47,7 +47,7 @@
             livenessProbe:
               httpGet:
                 path: /api/employees/health
-                port: 8080
+                port: 9090
               initialDelaySeconds: 60
               periodSeconds: 10
             readinessProbe:
