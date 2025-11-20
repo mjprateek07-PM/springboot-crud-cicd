@@ -4,5 +4,5 @@ metadata:
   name: app-config
 data:
   DB_HOST: mysql-service
-  DB_PORT: "3306"
+  DB_PORT: "3307"
   DB_NAME: cruddb
